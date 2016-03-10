@@ -49,6 +49,9 @@
     border: none;
     padding: 0;
 }
+.btn-cancel {
+    background-color: #c3c3c3;
+}
 .btn-cancel:hover {
     color: white;
     background-color: #a5a5a5;

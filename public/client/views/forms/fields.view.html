@@ -24,7 +24,7 @@
                         <div class="col-xs-12">
 
                             <div class="row">
-                                <div class="col-xs-6 editPadding" ng-switch="field.type">
+                                <div class="col-sm-6 editPadding" ng-switch="field.type">
 
                                     <label class="control-label">{{field.label}}</label><br/>
 
@@ -58,7 +58,7 @@
                                 </div>
 
 
-                                <div class="col-xs-6 editPadding text-align-right">
+                                <div class="col-sm-6 editPadding text-align-right">
                                     <button ng-click="editField($index)" type="button" class="btn btn-primary editIcon"><span class="glyphicon glyphicon-pencil"></span></button>
                                     <button ng-click="cloneField(field._id)" type="button" class="btn btn-info editIcon"><span class="glyphicon glyphicon-plus"></span></button>
                                     <button ng-click="removeField(field._id, $index)" type="button" class="btn btn-danger editIcon"><span class="glyphicon glyphicon-remove"></span></button>

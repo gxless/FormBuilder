@@ -18,21 +18,21 @@
     <div ng-switch="field.type" class="col-xs-12">
 
         <div class="form-group row">
-            <div class="col-xs-6">
+            <div class="col-sm-6">
                 <label class="control-label">Set Label <span class="requiredText">(required)</span></label>
                 <input ng-model="field.label" type="text" class="form-control" placeholder="Label">
             </div>
         </div>
 
         <div ng-switch-when="TEXT" class="form-group row">
-            <div class="col-xs-6">
+            <div class="col-sm-6">
                 <label class="control-label">Set Placeholder</label>
                 <input ng-model="field.placeholder" type="text" class="form-control" placeholder="Placeholder">
             </div>
         </div>
 
         <div ng-switch-when="TEXTAREA" class="form-group row">
-            <div class="col-xs-6">
+            <div class="col-sm-6">
                 <label class="control-label">Set Placeholder</label>
                 <input ng-model="field.placeholder" type="text" class="form-control" placeholder="Placeholder">
             </div>
@@ -42,7 +42,7 @@
         </div>
 
         <div ng-switch-when="OPTIONS" class="form-group row">
-            <div class="col-xs-6">
+            <div class="col-xs-12">
                 <label class="control-label">Set Options <span class="requiredText">(at least one)</span></label>
                 <div class="row">
                     <div class="col-xs-5">
@@ -72,7 +72,7 @@
 
 
         <div ng-switch-when="CHECKBOXES" class="form-group row">
-            <div class="col-xs-6">
+            <div class="col-xs-12">
                 <label class="control-label">Set Options <span class="requiredText">(at least one)</span></label>
                 <div class="row">
                     <div class="col-xs-5">
@@ -101,7 +101,7 @@
         </div>
 
         <div ng-switch-when="RADIOS" class="form-group row">
-            <div class="col-xs-6">
+            <div class="col-xs-12">
                 <label class="control-label">Set Options <span class="requiredText">(at least one)</span></label>
                 <div class="row">
                     <div class="col-xs-5">
