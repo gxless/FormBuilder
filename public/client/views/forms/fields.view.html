@@ -28,7 +28,7 @@
 
                                     <label class="control-label">{{field.label}}</label><br/>
 
-                                    <textarea ng-switch-when="TEXTAREA" ng-model="textarea" class="form-control" placeholder="{{field.placeholder}}" rows="3"></textarea>
+                                    <textarea ng-switch-when="TEXTAREA" ng-model="textarea" class="form-control" placeholder="{{field.placeholder}}" rows="3" disabled></textarea>
 
                                     <div ng-switch-when="CHECKBOXES" ng-model="checkboxes" ng-repeat="option in field.options" class="checkbox">
                                         <label>
@@ -38,7 +38,7 @@
 
                                     <div ng-switch-when="RADIOS" ng-repeat="option in field.options" class="radio">
                                         <label>
-                                            <input type="radio" value="{{option.value}}"> {{option.label}}
+                                            <input type="radio" name="radio_{{$parent.$index}}" value="{{option.value}}"> {{option.label}}
                                         </label>
                                     </div>
 
@@ -53,7 +53,7 @@
                                         </div>
                                     </div>
 
-                                    <input ng-switch-default type="text" class="form-control" placeholder="{{field.placeholder}}">
+                                    <input ng-switch-default type="text" class="form-control" placeholder="{{field.placeholder}}" disabled>
 
                                 </div>
 

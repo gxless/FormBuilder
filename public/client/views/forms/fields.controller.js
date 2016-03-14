@@ -73,6 +73,7 @@
                 FieldService.updateField(formId, fieldId, field)
                     .then(function (response) {
                         $scope.model.fields[index] = response;
+                        $scope.editShownIndex = -1;
                     });
             } else {
                 $scope.hasError = true;
@@ -119,7 +120,13 @@
                 FieldService.changeFieldOrder(formId, changedOrder)
                     .then(function (response) {
                         $scope.model.fields = response;
-                        $scope.editShownIndex = -1;
+                        if($scope.editShownIndex == oriPosition) {
+                            $scope.editShownIndex = newPosition;
+                        } else if($scope.editShownIndex > oriPosition && $scope.editShownIndex <= newPosition) {
+                            $scope.editShownIndex--;
+                        } else if($scope.editShownIndex < oriPosition && $scope.editShownIndex >= newPosition) {
+                            $scope.editShownIndex++;
+                        }
                     });
             }
 
