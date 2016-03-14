@@ -1,6 +1,5 @@
 # Form Builder
 
-<<<<<<< HEAD
 
 ### Intro
 Form Builder is a website that enables registered users to create their own forms and edit the fields in a form. Editing the fields for a form is highly interactive and it includes CRUD operations for both forms and fields. Mobile first is the design philosophy and it's also a single page web application.
@@ -11,15 +10,16 @@ Form Builder is a website that enables registered users to create their own form
 * Node.js, Express.js, MongoDB, Mongoose
 * Openshift, git, WebStorm IDE
 
-=======
+
 ### Intro
 Form Builder is a website that enables registered users to create their own forms and edit the fields in a form. Editing the fields for a form is highly interactive and it includes CRUD operations for both forms and fields. Mobile first is the design philosophy and it's also a single page web application.
+
 
 ### Technologies
 * HTML5, CSS3, BootStrap, JavaScript, AngularJS, jQuery, jQuery UI(sortable)
 * Node.js, Express.js, MongoDB, Mongoose
 * Openshift, git, WebStorm IDE 
->>>>>>> 0a9db4cd69e5fb5ce0d19b36410b601db07ed8ee
+
 
 ### Current Progress
 This website is not finished yet! By now, I have done the client side and most of the server side's work. Below is what's in progress:
@@ -27,10 +27,7 @@ This website is not finished yet! By now, I have done the client side and most o
 * Connect Node.js server to MongoDB
 * Bug fixes
 
-<<<<<<< HEAD
 
-=======
->>>>>>> 0a9db4cd69e5fb5ce0d19b36410b601db07ed8ee
 ### More Info
 * Personal Blog: http://blog-gxless.rhcloud.com
 * FormBuilder Website: http://formbuilder-gxless.rhcloud.com
