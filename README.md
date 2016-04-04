@@ -12,9 +12,8 @@ Form Builder is a website that enables registered users to create their own form
 
 
 ### Current Progress
-This website is not finished yet! By now, I have done the client side and most of the server side's work. Below is what's in progress:
+This website is almost done! By now, I have done the client, server side and MongoDB server work. Below is what's in progress:
 * Implement Passport to keep users logging in
-* Connect Node.js server to MongoDB
 * Bug fixes
 
 
