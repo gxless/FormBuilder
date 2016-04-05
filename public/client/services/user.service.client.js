@@ -15,7 +15,7 @@
             deleteUserById : deleteUserById,
             updateUserById : updateUserById,
             setCurrentUser : setCurrentUser,
-            getCurrentUser :getCurrentUser
+            getCurrentUser : getCurrentUser
         };
 
         return api;
@@ -40,13 +40,12 @@
 
         function findUserByCredentials(username, password) {
             var deferred = $q.defer();
-
             var credentials = {
                 username: username,
                 password: password
             };
 
-            $http.post("/api/assignment/user/login", credentials)
+            $http.post("/api/assignment/user/" + username, credentials)
                 .success(function (response) {
                     deferred.resolve(response);
                 });
@@ -56,7 +55,6 @@
 
         function findAllUsers() {
             var deferred = $q.defer();
-
             $http.get('/api/assignment/user')
                 .success(function (response) {
                     deferred.resolve(response);
@@ -67,7 +65,6 @@
 
         function createUser(user) {
             var deferred = $q.defer();
-
             $http.post('/api/assignment/user', user)
                 .success(function (response) {
                     deferred.resolve(response);
@@ -78,7 +75,6 @@
 
         function deleteUserById(userId) {
             var deferred = $q.defer();
-
             $http.delete('/api/assignment/user/' + userId)
                 .success(function (response) {
                     deferred.resolve(response);
@@ -89,7 +85,6 @@
 
         function updateUserById(userId, user) {
             var deferred = $q.defer();
-
             $http.put('/api/assignment/user/' + userId, user)
                 .success(function (response) {
                     deferred.resolve(response);

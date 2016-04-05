@@ -24,11 +24,15 @@
                     controller: "AdminController"
                 })
                 .when("/forms", {
-                    templateUrl: "views/forms/forms.view.html",
+                    templateUrl: "views/forms/form.view.html",
                     controller: "FormController"
                 })
                 .when("/fields", {
-                    templateUrl: "views/forms/fields.view.html",
+                    templateUrl: "views/forms/field.view.html",
+                    controller: "FieldController"
+                })
+                .when("/form/:formId/field", {
+                    templateUrl: "views/forms/field.view.html",
                     controller: "FieldController"
                 })
                 .otherwise({
