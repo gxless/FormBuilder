@@ -7,13 +7,11 @@ Form Builder is a website that enables registered users to create their own form
 
 ### Technologies
 * HTML5, CSS3, BootStrap, JavaScript, AngularJS, jQuery, jQuery UI(sortable)
-* Node.js, Express.js, MongoDB, Mongoose
+* Node.js, Express.js, Passport.js, MongoDB, Mongoose
 * Openshift, git, WebStorm IDE
 
 
 ### Current Progress
-This website is almost done! By now, I have done the client, server side and MongoDB server work. Below is what's in progress:
-* Implement Passport.js to authenticate users
 * Bug fixes
 
 
