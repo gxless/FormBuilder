@@ -3,8 +3,8 @@ module.exports = function(app, UserModel, passport, bcrypt, LocalStrategy, Faceb
     var auth = authorized;
 
     var facebookConfig = {
-        clientID: "1089057697813255",
-        clientSecret: "89e78ae114ccbe7a70824bd4905841b6",
+        clientID: "663157670488895",
+        clientSecret: "363c1cb587745762a6c088b80665e47e",
         callbackURL: "http://formbuilder-gxless.rhcloud.com/auth/facebook/callback"
     };
 
